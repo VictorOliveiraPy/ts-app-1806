@@ -8,7 +8,9 @@ from django.db.models import Q
 def search(request):
     query = request.GET.get('query', '')
     subscription = Subscription.objects.filter(Q(name__icontains=query)
-                                               | Q(lecture_theme__icontains=query))
+                                               | Q(lecture_theme__icontains=query)
+                                               | Q(email__icontains=query)
+                                               | Q(cpf__icontains=query))
     return render(request, 'subscription/subscription_list.html',
                   {'subscription': subscription, 'query': query})
 
@@ -43,7 +45,7 @@ def update_subscription(request, pk):
 
         return redirect("subscription:subscription-update', obj.pk")
 
-    return render(request, "subscription/subscription_update.html",
+    return render(request, "subscription/subscription_added.html",
                   {"form": form})
 
 

@@ -7,7 +7,7 @@
         <div class="container">
             <h3>Lista de Palestrantes</h3>
             <br>
-            <p><a href="{% url 'subscription:subscription' %}">Nova Palestra</a></p>
+            <p><a class="btn btn-primary" href="{% url 'subscription:subscription' %}">Nova Palestra</a></p>
 
             <table class="table table_bordered">
                 <tr>
@@ -29,8 +29,8 @@
                         <td>{{ object.phone }}</td>
                         <td>{{ object.lecture_theme }}</td>
                         <td>
-                            <a href="{% url 'subscription:subscription-update' object.pk %}">Editar</a> |
-                            <a href="{% url 'subscription:subscription-delete' object.pk  %}">Deletar
+                            <a class="btn btn-primary" href="{% url 'subscription:subscription-update' object.pk %}">Editar</a> |
+                            <a class="btn btn-danger" href="{% url 'subscription:subscription-delete' object.pk  %}">Deletar
 
                             </a>
                         </td>
