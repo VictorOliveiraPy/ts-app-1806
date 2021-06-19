@@ -29,12 +29,15 @@ def added_subscription(request):
 
         if form.is_valid():
             obj = form.save()
-            messages.success(request, 'Palestra registrada com sucesso')
+            messages.success(request,
+                             'Palestra registrada com sucesso')
+
             return redirect('subscription:subscription-detail', obj.pk)
     else:
         form = SubscriptionForm()
 
-    return render(request, 'subscription/subscription_added.html',
+    return render(request,
+                  'subscription/subscription_added.html',
                   {'form': form})
 
 
@@ -47,14 +50,17 @@ def update_subscription(request, pk):
 
         return redirect("subscription:subscription-update', obj.pk")
 
-    return render(request, "subscription/subscription_added.html",
+    return render(request,
+                  "subscription/subscription_added.html",
                   {"form": form})
 
 
 def subscription_detail(request, pk):
     template_name = 'subscription/detail_subscription.html'
     obj = Subscription.objects.get(pk=pk)
-    return render(request, template_name, {'object': obj})
+    return render(request,
+                  template_name,
+                  {'object': obj})
 
 
 def delete_subscription(request, pk):
