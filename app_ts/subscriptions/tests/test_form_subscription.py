@@ -35,7 +35,6 @@ class SubscriptionFormTest(TestCase):
         form = self.make_validated_form(name='Victor hugo')
         self.assertEqual('Victor Hugo', form.cleaned_data['name'])
 
-
     def assertFormErrorCode(self, form, field, code):
         errors = form.errors.as_data()
         errors_list = errors[field]
