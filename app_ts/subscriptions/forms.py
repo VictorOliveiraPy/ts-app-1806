@@ -10,12 +10,17 @@ class SubscriptionFormOld(forms.Form):
     cpf = forms.CharField(label='CPF', validators=[validate_cpf])
     email = forms.EmailField(label='E-mail', required=False)
     phone = forms.CharField(label='Telefone', required=False)
+    lecture_theme = forms.CharField(label='Nome')
 
 
 class SubscriptionForm(forms.ModelForm):
     class Meta:
         model = Subscription
-        fields = ['name', 'cpf', 'email', 'phone']
+        fields = ['name',
+                  'cpf',
+                  'email',
+                  'phone',
+                  'lecture_theme']
 
     def clean_name(self):
         name = self.cleaned_data['name']

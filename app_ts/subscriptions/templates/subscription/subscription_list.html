@@ -2,6 +2,7 @@
 {% block title %}Lista de Palestrantes {% endblock %}
 
 {% block content %}
+
     <section class="section-content">
         <div class="container">
             <h3>Lista de Palestrantes</h3>
@@ -21,13 +22,12 @@
 
                 {% for object in subscription %}
                     <tr>
-
                         <td>{{ object.id }}</td>
                         <td>{{ object.name }}</td>
-                        <td>{{ object.description }}</td>
-                        <td>{{ object.contact_phone }}</td>
-                        <td>{{ object.contact_email }}</td>
-                        <td>{{ object.website }}</td>
+                        <td>{{ object.cpf }}</td>
+                        <td>{{ object.email }}</td>
+                        <td>{{ object.phone }}</td>
+                        <td>{{ object.lecture_theme }}</td>
                         <td>
                             <a href="{% url 'subscription:subscription-update' object.pk %}">Editar</a> |
                             <a href="{% url 'subscription:subscription-delete' object.pk  %}">Deletar

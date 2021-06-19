@@ -1,14 +1,22 @@
-from django.http.response import HttpResponseRedirect
 from django.shortcuts import get_object_or_404, render, redirect
 from app_ts.subscriptions.forms import SubscriptionForm
 from django.contrib import messages
 from . models import Subscription
+from django.db.models import Q
+
+
+def search(request):
+    query = request.GET.get('query', '')
+    subscription = Subscription.objects.filter(Q(name__icontains=query)
+                                               | Q(lecture_theme__icontains=query))
+    return render(request, 'subscription/subscription_list.html',
+                  {'subscription': subscription, 'query': query})
 
 
 def subscription_list(request):
     subscription = Subscription.objects.all()[0:8]
     return render(request, 'subscription/subscription_list.html',
-                  {'subscrition': subscription})
+                  {'subscription': subscription})
 
 
 def added_subscription(request):
@@ -47,4 +55,4 @@ def subscription_detail(request, pk):
 
 def delete_subscription(request, pk):
     Subscription.objects.get(pk=pk).delete()
-    return redirect("home")
+    return redirect("subscription:subscription-list")
