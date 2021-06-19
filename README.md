@@ -18,3 +18,9 @@ poetry shell
 poetry install
 python manage.py test
 ```
+
+# Docker postgreSQL
+
+``console
+docker run -d --name nome -e POSTGRES_PASSWORD=senha -e POSTGRES_USER=user -p 5432:5432 postgres'
+```
