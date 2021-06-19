@@ -1,0 +1,523 @@
+.olist-logo {
+
+}
+
+body {
+    background-color: #EAEAF4;
+}
+
+
+
+.footer a {
+    margin-bottom: 15px;
+    display: inline-block;
+    color: #444;
+}
+
+
+.page-header .grid-container {
+	padding-right: 3.75rem;
+	padding-left: 3.75rem;
+	max-width: -webkit-fill-available !important;
+}
+
+.sticky.is-stuck {
+	z-index: 10;
+}
+
+.text-left {
+	text-align: left !important;
+}
+
+main.pagepadrao-olist21 {
+	padding-top: 90px;
+}
+
+.modal-video-close-btn {
+	padding: 0!important;
+	border-radius: 0!important;
+}
+
+.elementor-column-gap-default>.elementor-row>.elementor-column>.elementor-element-populated {
+	padding: 0;
+}
+
+
+/*
+.elementor-column-gap-default>.elementor-column>.elementor-element-populated {
+	padding: 0;
+}*/
+
+.margin-boxbg {
+	margin: 0 0 6rem;
+}
+
+.margin-rightleft {
+	margin: 0 0.75rem;
+}
+
+.padding-boxbghome {
+	padding: 6rem 5rem 6em 4%;
+}
+
+.padding-boxbg-homehero {
+	padding: 4.5rem 0 3.5rem;
+}
+
+.padding-boxbg-hero {
+	padding: 4rem 0 2rem;
+}
+
+.padding-boxbg {
+	padding: 6rem 5rem;
+}
+
+.padding-boxbgleftright {
+	padding: 0 5rem;
+}
+
+.padding-boxbg-lessbottom {
+	padding: 6rem 5rem 0 5rem;
+}
+
+.padding-box2rem {
+	padding: 2rem;
+}
+
+.padding-box4rem {
+	padding: 4rem;
+}
+
+.padding-rightleaft-4 {
+	padding: 0 4rem;
+}
+
+
+
+.callout.success {
+	padding: 0.5rem;
+	border: none;
+}
+
+.footer-widgets .logoolist {
+	width: 70px;
+}
+
+
+/** correcao elementor geral  **/
+
+.pagepadrao-olist21 .elementor-button,
+button.js-video-button {
+	font-size: 1rem;
+	line-height: 1em;
+	border-radius: 32px 32px 32px 32px;
+	padding: 0.9em 3em;
+}
+
+button.js-video-button {
+	font-weight: 600 !important;
+}
+
+
+/** theme colors**/
+
+.text-theme-blue {
+	color: #0C29D0;
+}
+
+.theme-white {
+	background-color: #fff;
+}
+
+.theme-blue {
+	background-color: #0C29D0;
+}
+
+.theme-purple-dark {
+	background-color: #7100AF;
+}
+
+.theme-lightest-blue {
+	background-color: #F7F9FF;
+}
+
+.theme-light-blue {
+	background-color: #364EF7;
+}
+
+.theme-darkest-blue {
+	background-color: #0B134A;
+}
+
+.theme-blue-dark {
+	background-color: #0A1F9C;
+}
+
+.theme-lightest-grey {
+	background-color: #F9F9FE;
+}
+
+.theme-lightest-green {
+	background-color: #F4FFFC;
+}
+
+.theme-lightest-purple {
+	background-color: #FCF7FF;
+}
+
+.theme-lightest-red {
+	background-color: #FEF7F5;
+}
+
+.theme-lightest-yellow {
+	background-color: #FEFBF1;
+}
+
+.background-middle-theme-dark-blue {
+	background: linear-gradient(to bottom, #0c29d0 75%, #fff 75%);
+}
+
+.background-middle-theme-lightest-green {
+	background: linear-gradient(to bottom, #F4FFFC 85%, #fff 85%);
+}
+
+.background-middle-theme-lightest-blue {
+	background: linear-gradient(to bottom, #F7F9FF 80%, #fff 80%);
+}
+
+.background-middle-theme-lightest-purple {
+	background: linear-gradient(to bottom, #FCF7FF 70%, #fff 70%);
+}
+
+
+/** highlight **/
+
+.highlight-blue-primary {
+	background-color: #0c29d0;
+	padding: 0 0.5rem;
+	color: #fff;
+}
+
+
+/** radios **/
+
+.radios16 {
+	border-radius: 1rem
+}
+
+.radios8 {
+	border-radius: 0.5rem
+}
+
+
+/** border **/
+
+.border-right {
+	border-right: 1px solid;
+}
+
+.border-left {
+	border-left: 1px solid;
+}
+
+.border-linegrey {
+	border: 1px solid #E1E1ED;
+}
+
+.border-lineblueprimary {
+	border: 1px solid #0C29D0;
+}
+
+.border-shadow {
+	box-shadow: 0px 16px 32px rgb(49 47 79 / 10%);
+}
+
+
+/** bottom elementor **/
+
+.bottom-theme-medium-blue>div>div>a {
+	background-color: #364ef7 !important;
+	color: #fff !important;
+	font-weight: bold !important;
+}
+
+.bottom-theme-blue>div>div>a {
+	background-color: #0C29D0 !important;
+	color: #fff !important;
+	font-weight: bold !important;
+}
+
+.bottom-theme-white>div>div>a {
+	background-color: #fff !important;
+	font-weight: bold !important;
+}
+
+.bottom-theme-border-white>div>div>a {
+	background-color: #fff0 !important;
+	border: 1px solid #fff !important;
+	font-weight: bold !important;
+}
+
+.bottom-demonstration-white {
+	color: #fff;
+	border: 1px solid;
+	padding: 0.9em 3em!important;
+	cursor: pointer;
+}
+
+.bottom-demonstration-white:hover {
+	transition: 0.3s;
+	background: #364ef7;
+	border-color: #364ef7;
+}
+
+.bottom-demonstration-white svg {
+	vertical-align: middle;
+	margin-left: 1rem !important;
+}
+
+.bottom-demonstration-blue {
+	background: #364ef7;
+	color: #fff;
+	padding: 0.9em 3em!important;
+	cursor: pointer;
+}
+
+.bottom-demonstration-blue:hover {
+	background: #0d2ad0;
+	transition: 0.3s;
+}
+
+.bottom-demonstration-blue svg {
+	vertical-align: middle;
+	margin-left: 1rem !important;
+}
+
+.bottom-demonstration .elementor-button-content-wrapper span {
+	height: 18px;
+}
+
+.bottom-demonstration .elementor-button-content-wrapper .elementor-button-text {
+	margin-top: 2px;
+}
+
+.bottom-download img {
+	border-radius: 8px;
+}
+
+
+/** tags com link **/
+
+.bottomtag>div>div>a {
+	background-color: #fff0 !important;
+	border: 1px solid #312F4F !important;
+	padding: 0.1rem 1.5rem !important;
+	font-size: 0.75rem !important;
+}
+
+.bottomtag-lightest-blue>div>div>a {
+	border-color: #364ef7 !important;
+	color: #364ef7 !important;
+}
+
+
+/** tags sem link **/
+
+.box-divtag {
+	margin: 0 0.5rem 0.5rem 0!important;
+}
+
+.divtag {
+	border: 1px solid #312F4F;
+	padding: 0 1.5rem;
+	font-size: 0.75rem;
+	border-radius: 32px;
+}
+
+
+/** geral **/
+
+.title_home {
+	max-width: 80%;
+}
+
+.titlepages_70 h2 {
+	width: 70%;
+}
+
+.titlepages_60 h3 {
+	width: 40%;
+}
+
+.titlepages_50 h2 {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.titlepages_50 .elementor-heading-title {
+	max-width: 50%;
+}
+
+.subtitle_pages {
+	padding: 1rem 0;
+}
+
+.bottom-100>div>div>a {
+	width: 100%;
+	padding: 0.9em 0.5em !important;
+}
+
+
+/* top bar */
+
+.top-bar a {
+	text-decoration: underline;
+}
+
+
+/* button - secondary */
+
+a.button.secondary {
+	background-color: #fff;
+	color: var( --primary);
+}
+
+a.button.secondary:hover {
+	background-color: var( --primary);
+	color: #fff;
+}
+
+
+/** hero home **/
+
+.box-produtoshero {
+	padding: 0;
+}
+
+.box-produtoshero .box-produtoherocol {
+	border-radius: 4px;
+	box-shadow: 0px 16px 32px rgba(49, 47, 79, 0.1);
+	background: #fff;
+	/*padding: 1.5rem 2.5rem;*/
+	padding: 2.188rem 2.875rem;
+	margin: 0 0.75rem;
+}
+
+.box-produtoshero .box-produtoherocol:first-child {
+	margin: 0 0.75rem 0 0;
+}
+
+.box-produtoshero .box-produtoherocol:last-child {
+	margin: 0 0 0 0.75rem;
+}
+
+.box-produtoshero a.elementor-button-link {
+	background: #364ef7;
+	padding: 0.7rem 1rem 0.6rem;
+	width: 100%;
+}
+
+.box-produtoshero .box-produtoherocol p {
+	padding: 0 0 1.5rem;
+	font-size: 1.3rem;
+	line-height: 1.5em;
+}
+
+
+/** hero 2 colunas **/
+
+.box-contenthero .elementor-col-50:last-child {
+	width: 60%;
+	padding: 0 0 0 4rem;
+}
+
+.box-contenthero .elementor-col-50:last-child {
+	width: 60%;
+}
+
+iframe#anima-hero-oliststore {
+	height: 517px;
+}
+
+
+/** form hero store **/
+
+.form-firststep {
+	background: #fff;
+	border: 6px solid #fff;
+	max-width: 500px;
+}
+
+.form-firststep>form {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.form-firststep input {
+	max-width: 300px;
+	padding: 0.3rem 0.5rem 0.2rem 1rem;
+	box-sizing: content-box;
+	color: #696D8C;
+	border: none;
+	box-shadow: none;
+	margin: 0;
+}
+
+.form-firststep [type=email]:focus {
+	border: none;
+	box-shadow: none;
+}
+
+.form-firststep .button {
+	font-size: 1rem;
+	padding: 0.9em 0.5rem 1em 0.5rem;
+	width: 200px;
+	margin: 0;
+}
+
+
+/** olist premium **/
+
+.background-premium-left-lightest-blue {
+	background: linear-gradient(to left, #F7F9FF 72%, #fff 72%);
+}
+
+.background-premium-theme-darkest-blue {
+	background: linear-gradient(to bottom, #0B134A 500px, #fff 500px);
+}
+
+.background-premium-theme-lightest-blue {
+	background: linear-gradient(to bottom, #F7F9FF 70%, #fff 70%);
+}
+
+.box-premiumapresentacao .box-premiumnumber {
+	padding: 0 0 0 10rem;
+}
+
+.box-premiumapresentacao .box-premiumnumber .elementor-widget-image-box {
+	padding: 0 6%;
+	border-right: 2px solid;
+}
+
+.box-premiumapresentacao .box-premiumnumber .elementor-widget-image-box:first-child {
+	padding: 0 6% 0 0;
+}
+
+.box-premiumapresentacao .box-premiumnumber .elementor-widget-image-box:nth-child(3) {
+	border: none;
+	padding: 0 0 0 6%;
+}
+
+
+/** nova .tabpremium-cases **/
+
+.tabpremium-cases .elementor-tab-title {
+	font-size: 1.25rem !important;
+	line-height: 1.2em !important;
+	padding: 2rem !important;
+	border-radius: 0.5rem;
+	margin: 0 1rem 2rem 1rem;
+	background: #fff;
+	box-shadow: 0px 16px 24px rgb(49 47 79 / 10%);
+	width: 32%;
+}

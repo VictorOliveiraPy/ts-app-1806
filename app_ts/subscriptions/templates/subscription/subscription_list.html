@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block title %}Lista de Palestrantes {% endblock %}
+
+{% block content %}
+    <section class="section-content">
+        <div class="container">
+            <h3>Lista de Palestrantes</h3>
+            <br>
+            <p><a href="{% url 'subscription:subscription' %}">Nova Palestra</a></p>
+
+            <table class="table table_bordered">
+                <tr>
+                    <th>Código</th>
+                    <th>Nome</th>
+                    <th>CPF</th>
+                    <th>E-mail</th>
+                    <th>Telefone</th>
+                    <th>PALESTRA</th>
+                    <th>Ação</th>
+                </tr>
+
+                {% for object in subscription %}
+                    <tr>
+
+                        <td>{{ object.id }}</td>
+                        <td>{{ object.name }}</td>
+                        <td>{{ object.description }}</td>
+                        <td>{{ object.contact_phone }}</td>
+                        <td>{{ object.contact_email }}</td>
+                        <td>{{ object.website }}</td>
+                        <td>
+                            <a href="{% url 'subscription:subscription-update' object.pk %}">Editar</a> |
+                            <a href="{% url 'subscription:subscription-delete' object.pk  %}">Deletar
+
+                            </a>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </section>
+{% endblock %}

@@ -1,6 +1,6 @@
 from django.db import models
 from django.shortcuts import resolve_url as r
-from eventex.subscriptions.validators import validate_cpf
+from app_ts.subscriptions.validators import validate_cpf
 
 
 class Subscription(models.Model):
@@ -9,7 +9,7 @@ class Subscription(models.Model):
     email = models.EmailField('E-mail', blank=True)
     phone = models.CharField('Telefone', max_length=20, blank=True)
     created_at = models.DateTimeField('Criado em', auto_now_add=True)
-    paid = models.BooleanField('Pago', default=False)
+    lecture_theme = models.CharField('Tema da palestra', max_length=255)
 
     class Meta:
         verbose_name_plural = 'inscrições'
@@ -20,4 +20,4 @@ class Subscription(models.Model):
         return self.name
 
     def get_absolute_url(self):
-        return r('subscriptions:detail', self.pk)
+        return r('subscription-detail', self.pk)
