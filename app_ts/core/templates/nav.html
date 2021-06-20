@@ -1,6 +1,6 @@
  {% load static %}
 
-<nav class="navbar navbar-expand-lg navbar-primary bg-light">
+<nav class="navbar  navbar-expand-lg navbar-primary bg-light">
   <div class="container-fluid">
     <img class="navbar-brand olist-logo" src="{% static 'img/logo.png' %}">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,6 +13,12 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{% url 'subscription:subscription-list' %}">Inscrição</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link subtitle" href="https://olist.com/planos/">Planos</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="https://olist.com/sobre-o-olist/">Sobre nos</a>
         </li>
       </ul>
 
