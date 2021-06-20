@@ -24,3 +24,12 @@ python manage.py test
 ```console
 docker run -d --name nome -e POSTGRES_PASSWORD=senha -e POSTGRES_USER=user -p 5432:5432 postgres'
 ```
+# Pagina inicial
+![Screenshot](home.png)
+
+# Tela de sucesso 
+![Screenshot](tela2.png)
+
+# List
+![Screenshot](tela3.png)
+
