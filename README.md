@@ -27,9 +27,9 @@ docker run -d --name nome -e POSTGRES_PASSWORD=senha -e POSTGRES_USER=user -p 54
 # Pagina inicial
 ![Screenshot](home.png)
 
-# Tela de sucesso 
+# List
 ![Screenshot](tela2.png)
 
-# List
+# # Tela de sucesso 
 ![Screenshot](tela3.png)
 
