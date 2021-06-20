@@ -1,13 +1,8 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block title %}Pagina inicial | {%endblock%}
 {% block content%}
 
-<div class="columns is-multiline mb-6">
-<h2>a plataforma de vendas online para quem sabe que pode mais
-Tecnologia, serviços e inteligência de mercado – tudo o que o seu negócio precisa para crescer na internet em um único lugar.
-Este é o olist. </h2>
-</div>
-</h3>
 
 <div class="columns is-multiline mb-6">
 
@@ -66,8 +61,13 @@ Este é o olist. </h2>
                 <a href="https://olist.com/olist-premium/" class="btn btn-primary is-uppercase">conheca olist premium</a>
             </div>
     </div>
+ <div class="container">
+        <img class="container" src="{% static 'img/olist.png' %}">
 
+    </div>
+ 
 </div>
 
     
 {%endblock%}
+  

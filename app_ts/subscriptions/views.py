@@ -11,7 +11,8 @@ def search(request):
         Q(name__icontains=query)
         | Q(cpf__icontains=query)
         | Q(email__icontains=query)
-        | Q(phone=query)
+        | Q(phone__icontains=query)
+        | Q(lecture_theme__icontains=query)
     )
     return render(
         request,
