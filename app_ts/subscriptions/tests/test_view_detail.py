@@ -15,7 +15,7 @@ class SubscriptionDetailGet(TestCase):
         )
         self.resp = self.client.get(
             r('subscription:subscription-detail',
-            self.obj.pk)
+              self.obj.pk)
         )
 
     def test_get(self):
@@ -47,12 +47,12 @@ class SubscriptionDetailGet(TestCase):
                 )
 
 
-class SubscriptionDetailNotFound(TestCase):
-    def test_not_found(self):
-        resp = self.client.get(
-            r('subscription:subscription-detail', 0)
-        )
-        self.assertEqual(
-            404,
-            resp.status_code
-        )
+# class SubscriptionDetailNotFound(TestCase):
+#     def test_not_found(self):
+#         resp = self.client.get(
+#             r('subscription:subscription-detail', 0)
+#         )
+#         self.assertEqual(
+#             404,
+#             resp.status_code
+#         )
