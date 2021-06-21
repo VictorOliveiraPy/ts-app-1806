@@ -50,8 +50,7 @@ class SubscriptionDetailGet(TestCase):
 class SubscriptionDetailNotFound(TestCase):
     def test_not_found(self):
         resp = self.client.get(
-            r('subscription:subscription-detail',
-              0)
+            r('subscription:subscription-detail', 0)
         )
         self.assertEqual(
             404,

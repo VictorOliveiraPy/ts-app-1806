@@ -19,5 +19,3 @@ class Subscription(models.Model):
     def __str__(self):
         return self.name
 
-    def get_absolute_url(self):
-        return r('subscription-detail', self.pk)

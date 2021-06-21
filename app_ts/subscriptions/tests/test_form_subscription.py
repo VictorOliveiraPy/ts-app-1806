@@ -14,7 +14,8 @@ class SubscriptionFormTest(TestCase):
             'cpf',
             'email',
             'phone',
-            'lecture_theme']
+            'lecture_theme'
+        ]
         self.assertSequenceEqual(
             ['name',
              'cpf',

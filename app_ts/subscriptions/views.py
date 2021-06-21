@@ -17,7 +17,8 @@ def search(request):
     return render(
         request,
         'subscription/subscription_list.html',
-        {'subscription': subscription, 'query': query})
+        {'subscription': subscription, 'query': query}
+    )
 
 
 def subscription_list(request):
@@ -37,9 +38,13 @@ def added_subscription(request):
             obj = form.save()
             messages.success(
                 request,
-                'Palestra registrada com sucesso')
+                'Palestra registrada com sucesso'
+            )
 
-            return redirect('subscription:subscription-detail', obj.pk)
+            return redirect(
+                'subscription:subscription-detail',
+                obj.pk
+            )
     else:
         form = SubscriptionForm()
 
@@ -51,13 +56,22 @@ def added_subscription(request):
 
 
 def update_subscription(request, pk):
-    obj = get_object_or_404(Subscription, pk=pk)
+    obj = get_object_or_404(
+        Subscription,
+        pk=pk
+    )
 
-    form = SubscriptionForm(request.POST, obj or None, instance=obj)
+    form = SubscriptionForm(
+        request.POST,
+        obj or None,
+        instance=obj
+    )
     if form.is_valid():
         form.save()
 
-        return redirect("subscription:subscription-update', obj.pk")
+        return redirect(
+            "subscription:subscription-update', obj.pk"
+        )
 
     return render(
         request,
@@ -77,4 +91,6 @@ def subscription_detail(request, pk):
 
 def delete_subscription(request, pk):
     Subscription.objects.get(pk=pk).delete()
-    return redirect("subscription:subscription-list")
+    return redirect(
+        "subscription:subscription-list"
+    )

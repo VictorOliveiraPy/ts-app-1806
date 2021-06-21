@@ -16,11 +16,13 @@ class SubscriptionFormOld(forms.Form):
 class SubscriptionForm(forms.ModelForm):
     class Meta:
         model = Subscription
-        fields = ['name',
-                  'cpf',
-                  'email',
-                  'phone',
-                  'lecture_theme']
+        fields = [
+            'name',
+            'cpf',
+            'email',
+            'phone',
+            'lecture_theme'
+        ]
 
     def clean_name(self):
         name = self.cleaned_data['name']
@@ -32,6 +34,8 @@ class SubscriptionForm(forms.ModelForm):
 
         if not self.cleaned_data.get('email') \
            and not self.cleaned_data.get('phone'):
-            raise ValidationError('Informe seu e-mail ou telefone.')
+            raise ValidationError(
+                'Informe seu e-mail ou telefone.'
+            )
 
         return self.cleaned_data
