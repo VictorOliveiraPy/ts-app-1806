@@ -13,14 +13,18 @@ class SubscriptionDetailGet(TestCase):
             phone='81-998834932',
             lecture_theme='pythonico'
         )
-        self.resp = self.client.get(r('subscription:subscription-detail', self.obj.pk))
+        self.resp = self.client.get(
+            r('subscription:subscription-detail', self.obj.pk))
 
     def test_get(self):
-        self.assertEqual(200, self.resp.status_code)
+        self.assertEqual(
+            200,
+            self.resp.status_code)
 
     def test_template(self):
-        self.assertTemplateUsed(self.resp,
-                                'subscription/detail_subscription.html')
+        self.assertTemplateUsed(
+            self.resp,
+            'subscription/detail_subscription.html')
 
     def test_html(self):
         contents = (self.obj.name, self.obj.cpf,
@@ -32,7 +36,11 @@ class SubscriptionDetailGet(TestCase):
                 self.assertContains(self.resp, expected)
 
 
-# class SubscriptionDetailNotFound(TestCase):
-#     def test_not_found(self):
-#         resp = self.client.get(r('subscription:subscription-detail', 0))
-#         self.assertEqual(404, resp.status_code)
+class SubscriptionDetailNotFound(TestCase):
+    def test_not_found(self):
+        resp = self.client.get(
+            r('subscription:subscription-detail',
+            0))
+        self.assertEqual(
+            404,
+            resp.status_code)
