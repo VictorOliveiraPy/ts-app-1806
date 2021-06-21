@@ -34,3 +34,67 @@ footer {
 	background-color: #EAEAF4;
 
 }
+body,h1, h2, p , ul, li , a      /* Resert estilo */
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+body  /*     */
+{
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
+    color: #222222;
+}
+
+img {  /* Responsivo */
+    display: block; 
+    max-width: 100%;  /*  não estoura o container   */
+}
+
+ *{
+     box-sizing: border-box; /*  caixa de borda*/
+ }
+
+ 
+
+ /* Menu*/
+
+.menu-bg {
+    background: #2c70ff;
+}
+
+.menu {
+    max-width: 960px;
+    margin: 0 auto;    /*  largura máxima Passo de 960 alinha ao centro  */
+    padding: 15px 0 ; /* Distancia entre o elemento e o topo  */
+    display: flex; /* Um item do lado do outrio*/
+    flex-wrap: wrap; /* Quebra se passa do px*/
+    justify-content: space-between; /* Criar um espaçamento entre os items*/
+    align-items: center; /* Alinha ao centro*/
+}
+
+.menu a {
+    color:white;
+}
+
+.menu-logo a{
+    font-size: 2.25em;
+    font-weight: bold; /*peso da fonte / bold = negrito*/
+    margin: 0 10px; /* mante a distancia/ Quando o item diminuir não gruda*/
+}
+
+.menu-nav  ul{
+    display: flex; /*Flex ficar um do lado do outro*/
+    flex-wrap: wrap; /*quebra pra nao ultrapassa o limite do container*/
+}
+
+.menu-nav a {
+    font-size: 1.25em;
+    display: block;
+    padding: 10px; /*Criar distancia entre os items*/
+}
+
+.menu-nav a:hover{ /*Efeito sobre o menu*/
+    color: #122ab2;
+
+}
