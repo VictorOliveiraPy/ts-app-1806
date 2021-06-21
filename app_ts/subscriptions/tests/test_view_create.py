@@ -42,12 +42,12 @@ class SubscriptionCreatePost(TestCase):
 
     def test_save_subscription(self):
         self.assertTrue(Subscription.objects.exists())
-    
+
 
 class SubscriptionCreatePostInvalid(TestCase):
     def setUp(self):
         self.resp = self.client.post(r('subscription:subscription'))
-    
+
     def test_post(self):
         """Invalid Post should not redirect"""
         self.assertEqual(200, self.resp.status_code)

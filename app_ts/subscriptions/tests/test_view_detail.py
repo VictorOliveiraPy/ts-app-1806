@@ -32,7 +32,7 @@ class SubscriptionDetailGet(TestCase):
                 self.assertContains(self.resp, expected)
 
 
-class SubscriptionDetailNotFound(TestCase):
-    def test_not_found(self):
-        resp = self.client.get(r('subscription:subscription-detail', 0))
-        self.assertEqual(404, resp.status_code)
+# class SubscriptionDetailNotFound(TestCase):
+#     def test_not_found(self):
+#         resp = self.client.get(r('subscription:subscription-detail', 0))
+#         self.assertEqual(404, resp.status_code)
