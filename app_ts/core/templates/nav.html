@@ -1,40 +1,16 @@
  {% load static %}
 
-<nav class="navbar menu-nav navbar-expand-lg navbar-primary bg-light">
-  <div class="container-fluid">
-   <img  class="navbar-brand  menu-logo" src="{% static 'img/logo.png' %}">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'subscription:subscription-list' %}">Inscrição</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link subtitle" href="https://olist.com/planos/">Planos</a>
-        </li>
-          <li class="nav-item">
-          <a class="nav-link" href="https://olist.com/sobre-o-olist/">Sobre nos</a>
-        </li>
-      </ul>
-
-      <form method="get" action="{% url 'subscription:search' %}">
-              <div class="field has-addons">
-                <div class="control">
-                 <input type="text" class="input" placeholder="Search..." name="query">
-                  </div>
-                  <div class="control">
-                        <button class="button is-dark is-uppercase">Search</button>
-                    </div>
-                    </div>
-                </form>
+<nav class="navbar bg-primary bg-gradient">
+            <div class="container">
+                <a href="." class="navbar-brand">
+                    <figure>
+                        <h2 class="display-6 fw-bold bold text-white">Olist</h2></span>
+                    </figure>
+                </a>
+                <ul class="navbar-nav flex-row fw-bold">
+                    <li class="nav-item px-3"><a class="nav-link text-white" href="{% url 'home' %}">Home</a></li>
+                    <li class="nav-item px-3"><a class="nav-link text-white" href="{% url 'subscription:subscription-list' %}">Palestras</a></li>
+                    <li class="nav-item px-3"><a class="nav-link text-white" href="https://olist.com/planos/">Planos</a></li>
+                    <li class="nav-item px-3"><a class="nav-link text-white" href="https://olist.com/sobre-o-olist/">Sobre nos</a></li>
             </div>
-          </div>
         </nav>
-
-
-
