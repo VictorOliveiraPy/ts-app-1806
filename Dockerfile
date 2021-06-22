@@ -1,0 +1,22 @@
+FROM python:3.9
+
+ENV PATH="/scripts:${PATH}"
+
+ADD . /code
+WORKDIR /code
+
+COPY poetry.lock pyproject.toml /tmp/
+
+
+RUN pip install poetry
+RUN cd /tmp && poetry export -f requirements.txt --output /tmp/requirements.txt
+RUN pip install -r /tmp/requirements.txt
+
+
+RUN  adduser --disabled-password user
+RUN chown -R user:user /vol/
+RUN chmod -R 755 /vol/web
+USER user
+RUN chmod +x /scripts/*
+
+CMD ["entrypoint.sh"]

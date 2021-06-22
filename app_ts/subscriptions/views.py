@@ -76,7 +76,8 @@ def update_subscription(request, pk):
     return render(
         request,
         "subscription/subscription_added.html",
-        {"form": form})
+        {"form": form}
+    )
 
 
 def subscription_detail(request, pk):

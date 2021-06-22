@@ -6,7 +6,7 @@ Sistema palestra Tech-start
 
 1. Clone o repositório
 2. Crie um ambiente virtual com poetry com python 3.9
-3. Ative o ambiente 
+3. Ative o ambiente
 4. Instale as depedencias
 5. Configure a instancia com o .env
 6. Execute os testes.
@@ -24,12 +24,3 @@ python manage.py test
 ```console
 docker run -d --name nome -e POSTGRES_PASSWORD=senha -e POSTGRES_USER=user -p 5432:5432 postgres'
 ```
-# Pagina inicial
-![Screenshot](home.png)
-
-# List
-![Screenshot](tela2.png)
-
-# # Tela de sucesso 
-![Screenshot](tela3.png)
-
