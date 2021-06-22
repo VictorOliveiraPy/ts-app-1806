@@ -24,3 +24,8 @@ python manage.py test
 ```console
 docker run -d --name nome -e POSTGRES_PASSWORD=senha -e POSTGRES_USER=user -p 5432:5432 postgres
 ```
+ # Executando projeto com NGINX 
+
+```
+    docker-compose -f docker-compose-deploy.yml up --build
+```
